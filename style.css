@@ -21,6 +21,26 @@ aside {
     font-size: 1.5rem;
 }
 
+li {
+    margin: 10px 20px;
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+li:first-of-type {
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+}
+
+li:nth-of-type(7) {
+    margin-bottom: 70px;
+}
+
+
 header {
     display: grid;
     background-color: #fff;
@@ -97,26 +117,66 @@ button {
 
 main {
     display: grid;
-    background-color: yellow;
+    background-color: rgb(218, 216, 216);
     grid-area: 2/2/8/3;
-}
-
-li {
-    margin: 10px 20px;
-    list-style: none;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
-    align-items: center;
+    grid-template-columns: 2.5fr 1fr;
     gap: 20px;
 }
 
-li:first-of-type {
-    margin-bottom: 50px;
-    font-size: 1.8rem;
+.project {
+    display: grid;
+    grid-template-rows: 1fr 15fr;
 }
 
-li:nth-of-type(7) {
-    margin-bottom: 70px;
+h2 {
+    margin-left: 20px;
+    margin-top: 20px;
 }
+
+.card-container {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 15px;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.card {
+    display: grid;
+    background-color: white;
+    border-radius: 5px;
+    grid-auto-flow: column;
+
+}
+
+.edge {
+    width: 8px;
+    background-color: goldenrod;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+    font-size: 1.2rem;
+    color: rgb(77, 74, 74);
+}
+
+.icons {
+    display: grid;
+    justify-content: end;
+    gap: 30px;
+    margin-right: 20px;
+    grid-auto-flow: column;
+}
+
+.card h2 {
+    margin-left: 0;
+}
+
+.extra {
+    background-color: blueviolet;
+}
+
 
