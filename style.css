@@ -10,7 +10,6 @@
     width: 100vw;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
-
 }
 
 aside {
@@ -101,6 +100,7 @@ main {
     background-color: yellow;
     grid-area: 2/2/8/3;
     grid-template-columns: 2.4fr 1fr;
+    overflow: scroll;
 }
 
 .projects {
